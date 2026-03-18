@@ -1,0 +1,10 @@
+name: Print Date on Push
+
+on: push
+
+jobs:
+  print-system-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print current system date
+        run: date
