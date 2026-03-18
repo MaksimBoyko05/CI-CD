@@ -1,0 +1,10 @@
+name: Manual OS Info
+
+on: workflow_dispatch
+
+jobs:
+  print-os-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Operating System Information
+        run: uname -v
